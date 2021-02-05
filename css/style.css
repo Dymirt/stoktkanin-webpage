@@ -1,0 +1,16 @@
+h3 {
+    text-align: center;
+}
+section > p {
+    text-align: justify;
+}
+header div{
+    text-align: center;
+} 
+header div:first-child{
+    text-align: left;
+}
+
+header div:last-child{
+    text-align: right;
+}
