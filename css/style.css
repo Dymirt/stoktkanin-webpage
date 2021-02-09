@@ -1,25 +1,18 @@
-section > p {
-    text-align: justify;
+.card{
+border: none;
 }
-header div{
+header img{
     text-align: center;
-} 
-header div:first-child{
-    text-align: left;
 }
-header div:last-child{
-    text-align: right;
+h2, h3{
+    text-align: center;
 }
-article {
-    background-color: gray;
-    margin: 0.5rem;
-    padding-bottom: 1rem;
-}
-article button{
+table{
     width: 100%;
 }
-body div{
-    background-color: silver;
-    margin-bottom: 1rem;
-    padding-top: 0.5rem;
+table td:last-child{
+    text-align: end;
+}
+article a{
+width: 100%;
 }
