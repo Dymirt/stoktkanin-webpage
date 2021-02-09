@@ -16,3 +16,10 @@ table td:last-child{
 article a{
 width: 100%;
 }
+article p{
+    max-height: 10rem;
+    overflow: scroll;
+}
+footer p{
+    text-align: center;
+}
