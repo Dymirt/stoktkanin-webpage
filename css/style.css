@@ -1,25 +1,6 @@
-.card{
-border: none;
-}
-header img{
+h1, h2 {
     text-align: center;
 }
-h2, h3{
-    text-align: center;
-}
-table{
-    width: 100%;
-}
-table td:last-child{
-    text-align: end;
-}
-article a{
-width: 100%;
-}
-article p{
-    max-height: 10rem;
-    overflow: scroll;
-}
-footer p{
-    text-align: center;
+main div {
+    background-color: aqua;
 }
