@@ -178,10 +178,6 @@ footer p {
     column-gap: 2rem;
 }
 
-.social a {
-    display: grid;
-}
-
 .social a:first-child {
     justify-self: right;
 }
@@ -268,16 +264,16 @@ footer p {
     .social {
         display: block;
     }
+    .social a {
+        display: initial;
+    }
     .social img {
-        margin-top: 0rem;
+        margin-right: 1rem;
         opacity: 0.7;
         cursor: pointer;
     }
     .social img:hover {
         opacity: 1;
-    }
-    .social img:first-child {
-        margin-right: 1rem;
     }
     footer a {
         color: inherit;
