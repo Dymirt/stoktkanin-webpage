@@ -54,7 +54,7 @@ main>div:first-child {
 
 main .container {
     display: grid;
-    height: 20rem;
+    height: 50vh;
     background-size: cover;
     background-position: center;
 }
@@ -217,7 +217,7 @@ display: none;
     }
 
     main .container {
-        height: 48rem;
+        height: 100vh;
     }
     footer {
         padding: 2rem 2rem;
