@@ -177,7 +177,8 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
 }
-.social a{
+
+.social a {
     display: grid;
 }
 
