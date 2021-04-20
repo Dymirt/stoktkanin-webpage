@@ -225,7 +225,7 @@ footer img:first-child {
         margin: -10rem 6rem 0 6rem;
     }
     .ofer h1 {
-        font-size: 28px;
+        font-size: 34px;
         font-weight: 600;
         padding-bottom: 1rem;
     }
@@ -304,5 +304,11 @@ footer img:first-child {
     #about {
         margin: 5rem;
         text-align: center;
+        padding-left: 15vw;
+        padding-right: 15vw;
+
+    }
+    button>p {
+        font-size: 16px;
     }
 }
