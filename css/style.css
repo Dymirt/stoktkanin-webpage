@@ -172,12 +172,13 @@ footer p {
     padding-bottom: 2rem;
 }
 
-.social{
+.social {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
 }
-.social a:first-child{
+
+.social a:first-child {
     justify-self: right;
 }
 
@@ -309,7 +310,6 @@ footer p {
         text-align: center;
         padding-left: 15vw;
         padding-right: 15vw;
-
     }
     button>p {
         font-size: 16px;
