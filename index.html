@@ -83,7 +83,8 @@
                 <a href="tel:+48733905342">
                     <p>Tel: +48 733 905 342</p>
                 </a>
-                <a href=" mailto:biuro@stoktkanin.com?subject=Stok Tkanin, Prośba o kontakt&body=Dzień dobry! Bardzo proszę o kontakt telefoniczny bądź mailowy.">
+                <a
+                    href=" mailto:biuro@stoktkanin.com?subject=Stok Tkanin, Prośba o kontakt&body=Dzień dobry! Bardzo proszę o kontakt telefoniczny bądź mailowy.">
                     <p> biuro@stoktkanin.com</p>
                 </a>
                 <a
@@ -118,6 +119,28 @@
     <a href="https://pl-pl.facebook.com/Stoktkanin/">
         <img id="facebook" src="img/icons8-facebook.svg" alt="Stok tkanin Facebook">
     </a>
+    <!-- Messenger Wtyczka czatu Code -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Wtyczka czatu code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="866326353501658">
+    </div>
 </body>
 
 </html>
