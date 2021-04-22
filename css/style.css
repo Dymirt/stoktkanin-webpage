@@ -41,8 +41,8 @@ nav {
     display: none;
 }
 
-.phone .phoneIcon {
-    height: 1em;
+.phone svg {
+    height: 1rem;
 }
 
 header .phone {
@@ -54,20 +54,22 @@ header .phone>p {
     display: none;
 }
 
-main>div:first-child {
+/*First Screen*/
+
+#firstScreen {
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
 }
 
-main .container {
+#firstScreen .container {
     display: grid;
     height: 50vh;
     background-size: cover;
     background-position: center;
 }
 
-.ofer {
+#firstScreen .ofer {
     position: absolute;
     justify-self: center;
     align-self: center;
@@ -76,24 +78,26 @@ main .container {
     margin: 0 2rem;
 }
 
-.ofer h1 {
+#firstScreen .ofer h1 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 1rem;
 }
 
-.ofer p {
+#firstScreen .ofer p {
     font-size: 15px;
 }
 
-.detal {
-    background-image: url(../img/83102FB7-A62D-45E2-9BAA-4277259FA1D8.jpg);
+#firstScreen .detal {
+    background-image: url(../img/detal.jpg);
 }
 
-.hurt {
-    background-image: url(../img/AdobeStock_254529536.jpeg);
+#firstScreen .hurt {
+    background-image: url(../img/hurt.jpeg);
 }
+
+/* Main Buttons*/
 
 .button {
     justify-self: center;
@@ -105,12 +109,10 @@ button {
     cursor: pointer;
     padding: 1rem;
     width: 15rem;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-    opacity: 0.8;
+    border: none;
+    opacity: 0.9;
+    transition: 1s;
+    border-radius: 5px;
 }
 
 button>p {
@@ -120,10 +122,12 @@ button>p {
     display: inline;
 }
 
-button>img {
-    height: 1em;
+button>svg {
+    height: 12px;
     padding-right: 0.5rem;
 }
+
+/*About Us section*/
 
 #about {
     margin: 3rem;
@@ -139,6 +143,8 @@ button>img {
 #about p {
     font-size: 15px;
 }
+
+/*Footer section*/
 
 footer {
     padding: 0 2rem;
@@ -167,6 +173,12 @@ footer p {
     font-size: 12px;
 }
 
+footer .social svg {
+    fill: white;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
 #dane {
     grid-row: 4;
     padding-bottom: 2rem;
@@ -181,6 +193,8 @@ footer p {
 .social a:first-child {
     justify-self: right;
 }
+
+/*Social link*/
 
 #instagram {
     display: none;
@@ -218,30 +232,28 @@ footer p {
     header .phone p {
         display: initial;
     }
-    .phone .phoneIcon {
-        height: 0.8em;
-        padding-right: 0.5em;
+    .phone svg {
+        height: 0.9em;
     }
-    main>div:first-child {
-        grid-template-columns: 1fr 1fr;
+    /*First Screen*/
+    #firstScreen {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .ofer {
+    #firstScreen .container {
+        height: 100vh;
+    }
+    #firstScreen .ofer {
         margin: -10rem 6rem 0 6rem;
     }
-    .ofer h1 {
+    #firstScreen .ofer h1 {
         font-size: 34px;
         font-weight: 600;
         padding-bottom: 1rem;
     }
-    .ofer p {
+    #firstScreen .ofer p {
         font-size: 15px;
     }
-    main a {
-        margin-top: 20rem;
-    }
-    main .container {
-        height: 100vh;
-    }
+    /*Footer*/
     footer {
         padding: 2rem 2rem;
         background-color: black;
@@ -261,25 +273,18 @@ footer p {
         opacity: 0.8;
         padding-bottom: 1em;
     }
-    .social {
-        display: block;
-    }
-    .social a {
-        display: initial;
-    }
-    .social img {
-        margin-right: 1rem;
-        opacity: 0.7;
-        cursor: pointer;
-    }
-    .social img:hover {
-        opacity: 1;
-    }
-    footer a {
-        color: inherit;
-    }
     footer p:hover {
         opacity: 1;
+        transition: 1s;
+    }
+    footer .social {
+        display: block;
+    }
+    footer .social a {
+        display: initial;
+    }
+    footer .social svg {
+        margin-right: 1rem;
     }
     #dane {
         margin-top: initial;
@@ -288,18 +293,6 @@ footer p {
     #dane p {
         font-size: 12px;
         padding-bottom: 1em;
-    }
-    #instagram {
-        display: initial;
-        position: fixed;
-        top: 50vh;
-        right: 2rem;
-    }
-    #facebook {
-        display: initial;
-        position: fixed;
-        top: 57vh;
-        right: 2rem;
     }
     br {
         display: block;
@@ -311,7 +304,44 @@ footer p {
         padding-left: 15vw;
         padding-right: 15vw;
     }
+    /* Main Buttons*/
+    .button {
+        margin-top: 30vh;
+    }
     button>p {
         font-size: 16px;
+    }
+    button svg {
+        height: 16px;
+    }
+    button:hover {
+        background-color: black;
+        color: white;
+        opacity: 0.8;
+        transition: 1s;
+        fill: white;
+    }
+    /*Social link*/
+    #instagram {
+        width: 1.5rem;
+        fill: white;
+        display: initial;
+        position: fixed;
+        top: 50vh;
+        right: 2rem;
+    }
+    #instagram:hover {
+        width: 2rem;
+    }
+    #facebook {
+        width: 1.5rem;
+        fill: white;
+        display: initial;
+        position: fixed;
+        top: 57vh;
+        right: 2rem;
+    }
+    #facebook:hover {
+        width: 2rem;
     }
 }
