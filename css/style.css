@@ -93,11 +93,11 @@ header .phone>p {
 }
 
 #firstScreen .detal {
-    background-image: url(../img/detal.jpg);
+    background-image: url(../img/detal.webp);
 }
 
 #firstScreen .hurt {
-    background-image: url(../img/hurt.jpeg);
+    background-image: url(../img/hurt.webp);
 }
 
 /* Main Buttons*/
