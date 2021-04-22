@@ -75,8 +75,8 @@ header .phone>p {
     align-self: center;
     text-align: center;
     color: #FFFFFF;
-    background: linear-gradient(rgba(0, 0, 0, 0.01) , rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0.01)) ;
-    padding: 25vh 10vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.01) , rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.01)) ;
+    padding: 12vh 10vw;
     width: 100vw;
     border-radius: 10px;
 }
