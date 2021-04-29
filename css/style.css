@@ -201,6 +201,9 @@ footer h3 {
 #dane p {
     padding-bottom: 0;
 }
+#fb-root {
+    display: none;
+}
 
 @media only screen and (min-width: 768px) {
     header {
@@ -328,5 +331,8 @@ footer h3 {
     }
     .fixed .facebook {
         top: 57vh;
+    }
+    #fb-root {
+        display: initial;
     }
 }
