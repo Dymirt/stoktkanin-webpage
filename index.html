@@ -10,12 +10,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Ads: 876413439 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-876413439"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-876413439');
+    </script>
+    <!-- Event snippet for Исходящий клик conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-876413439/d1VzCPKP8Z4CEP-D9KED',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
     <title>Stok Tkanin</title>
 </head>
 
 <body>
     <header>
-        <img id="logo" src="img/StokTkanin-logo.jpg" alt="STOK TKANIN">
+        <img id="logo" src="img/StokTkanin-logo.jpg" alt="STOK TKANIN" height="32px" width="auto">
         <nav>
             <ul>
                 <li><a href="#about">O nas</a></li>
